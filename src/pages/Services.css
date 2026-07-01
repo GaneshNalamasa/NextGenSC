@@ -1,0 +1,148 @@
+/* ===========================
+   Services Section
+=========================== */
+
+.services-section{
+    padding:90px 8%;
+    background:#f8fbff;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.services-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.services-header h1{
+    font-size:48px;
+    color:#1565C0;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.services-header p{
+    max-width:800px;
+    margin:auto;
+    color:#555;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ===========================
+   Services Grid
+=========================== */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+/* ===========================
+   Service Card
+=========================== */
+
+.service-card{
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:all .35s ease;
+
+    cursor:pointer;
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#1565C0;
+
+    color:white;
+
+    box-shadow:0 15px 35px rgba(21,101,192,.25);
+}
+
+/* ===========================
+   Icon
+=========================== */
+
+.check-icon{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:#E3F2FD;
+
+    color:#1565C0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    flex-shrink:0;
+
+    transition:.35s;
+}
+
+.service-card:hover .check-icon{
+
+    background:white;
+
+    color:#1565C0;
+}
+
+/* ===========================
+   Service Text
+=========================== */
+
+.service-card h3{
+
+    font-size:20px;
+
+    font-weight:600;
+
+    line-height:1.5;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .services-header h1{
+        font-size:38px;
+    }
+
+    .services-header p{
+        font-size:16px;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+}

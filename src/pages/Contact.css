@@ -1,0 +1,204 @@
+/* ===========================
+   Contact Section
+=========================== */
+
+.contact-section{
+    width:100%;
+    min-height:100vh;
+    padding:80px 8%;
+    background:#f5f9ff;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.contact-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.contact-header h1{
+    font-size:48px;
+    color:#1565C0;
+    margin-bottom:15px;
+}
+
+.contact-header p{
+    max-width:750px;
+    margin:auto;
+    color:#555;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ===========================
+   Main Container
+=========================== */
+
+.contact-container{
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    align-items:flex-start;
+}
+
+/* ===========================
+   Left Side
+=========================== */
+
+.company-info{
+
+    flex:1;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.company-info h2{
+
+    color:#1565C0;
+
+    margin-bottom:30px;
+
+    font-size:30px;
+}
+
+.info-box{
+
+    margin-bottom:30px;
+}
+
+.info-box h3{
+
+    color:#1565C0;
+
+    margin-bottom:10px;
+
+    font-size:20px;
+}
+
+.info-box p{
+
+    color:#555;
+
+    line-height:1.8;
+}
+
+/* ===========================
+   Right Side
+=========================== */
+
+.contact-form{
+
+    flex:1.2;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.contact-form h2{
+
+    color:#1565C0;
+
+    margin-bottom:30px;
+
+    font-size:30px;
+}
+
+.contact-form form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    border:1px solid #dcdcdc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+.contact-form input:focus,
+
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:#1565C0;
+
+    box-shadow:0 0 10px rgba(21,101,192,.2);
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.contact-form button{
+
+    background:#1565C0;
+
+    color:white;
+
+    border:none;
+
+    padding:16px;
+
+    font-size:18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.contact-form button:hover{
+
+    background:#0D47A1;
+
+    transform:translateY(-3px);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+    .contact-container{
+
+        flex-direction:column;
+    }
+
+    .company-info,
+
+    .contact-form{
+
+        width:100%;
+    }
+}
