@@ -1,0 +1,133 @@
+.footer {
+  background: linear-gradient(135deg, #0b1220, #0f172a);
+  color: white;
+  padding: 70px 8% 25px;
+}
+
+/* GRID */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* CARD STYLE SECTIONS */
+.footer-column {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 22px;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-column:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 194, 255, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 194, 255, 0.08);
+}
+
+/* HEADINGS */
+.footer-column h2 {
+  color: #00c2ff;
+  margin-bottom: 14px;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.footer-column h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: #00c2ff;
+}
+
+/* LIST */
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.85;
+}
+
+.footer-column ul li:hover {
+  color: #00c2ff;
+  transform: translateX(5px);
+  opacity: 1;
+}
+
+/* CONTACT BLOCK */
+.contact-block {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.contact-block:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: bold;
+  color: #00c2ff;
+  margin-bottom: 4px;
+}
+
+/* NEWSLETTER */
+.newsletter p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.newsletter-box {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-box input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.newsletter-box input::placeholder {
+  color: #bbb;
+}
+
+.newsletter-box button {
+  background: linear-gradient(135deg, #00c2ff, #0099cc);
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.newsletter-box button:hover {
+  transform: scale(1.05);
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 14px;
+  opacity: 0.75;
+}

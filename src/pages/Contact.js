@@ -26,7 +26,7 @@ function Contact() {
             <p>
               NextGen Solutions Corporation
               <br />
-              Charlotte, North Carolina
+              1301 K Street NW, Suite 300W, Washington DC 20005
               <br />
               United States
             </p>
@@ -34,12 +34,12 @@ function Contact() {
 
           <div className="info-box">
             <h3>📞 Phone</h3>
-            <p>+1 (704) 123-4567</p>
+            <p>+1 (202) 869-8670</p>
           </div>
 
           <div className="info-box">
             <h3>✉ Email</h3>
-            <p>info@nextgensc.com</p>
+            <p>SLED@NextGenSC.com</p>
           </div>
 
           <div className="info-box">

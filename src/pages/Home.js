@@ -4,135 +4,118 @@ import heroImage from "../assets/images/hero-image.png";
 function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="home">
+      {/* ================= HERO ================= */}
+      <section className="hero-section">
+        <div className="container hero-container">
 
-        <div className="hero-left">
+          <div className="hero-left">
 
-          <p className="welcome-text">
-            WELCOME TO NEXTGEN SOLUTIONS CORPORATION
-          </p>
+            <p className="tagline">
+              NEXTGEN SOLUTIONS CORPORATION
+            </p>
 
-          <h1 className="hero-title">
-            Empowering Businesses
-            <br />
-            <span>Through Technology & Talent</span>
-          </h1>
+            <h1 className="title">
+              Empowering Businesses
+              <span> with Technology & Talent</span>
+            </h1>
 
-          <p className="hero-description">
-            NextGen Solutions Corporation is a trusted IT Staffing and Technology
-            Consulting company delivering innovative solutions in Artificial
-            Intelligence, Cloud Computing, Cyber Security, Data Analytics,
-            Project Management, and IT Consulting for government and commercial
-            organizations across the United States.
-          </p>
+            <p className="subtitle">
+              We deliver AI, Cloud, Cyber Security, Data Analytics and IT Staffing
+              solutions across the USA with innovation and excellence.
+            </p>
 
-          <div className="hero-buttons">
-            <button className="primary-btn">
-              Explore Services
-            </button>
+            <div className="buttons">
+              <button className="btn primary">Explore Services</button>
+              <button className="btn outline">Contact Us</button>
+            </div>
 
-            <button className="secondary-btn">
-              Contact Us
-            </button>
+          </div>
+
+          <div className="hero-right">
+            <img src={heroImage} alt="IT Solutions" />
           </div>
 
         </div>
-
-        <div className="hero-right">
-          <img src={heroImage} alt="IT Solutions" />
-        </div>
-
       </section>
 
-      {/* Why Choose Us */}
+      {/* ================= WHY US ================= */}
+      <section className="why-section">
+        <h2 className="section-title">Why Choose Us</h2>
 
-      <section className="why-us">
+        <div className="container grid">
 
-        <h2>Why Choose NextGen Solutions Corporation?</h2>
-
-        <div className="why-grid">
-
-          <div className="why-card">
+          <div className="card">
             <h3>Innovation</h3>
-            <p>
-              Delivering modern technology solutions that help organizations
-              grow faster and smarter.
-            </p>
+            <p>Modern technology solutions that drive business growth.</p>
           </div>
 
-          <div className="why-card">
-            <h3>Experienced Professionals</h3>
-            <p>
-              Highly skilled consultants with expertise across multiple
-              technologies and industries.
-            </p>
+          <div className="card">
+            <h3>Expert Team</h3>
+            <p>Highly skilled IT professionals and consultants.</p>
           </div>
 
-          <div className="why-card">
-            <h3>Government Expertise</h3>
-            <p>
-              Supporting federal, state, and local government agencies with
-              trusted IT solutions.
-            </p>
+          <div className="card">
+            <h3>Trusted Partner</h3>
+            <p>Reliable solutions for government and enterprise clients.</p>
           </div>
 
-          <div className="why-card">
-            <h3>Client-Centric Approach</h3>
-            <p>
-              Building long-term partnerships by delivering quality, innovation,
-              and exceptional customer service.
-            </p>
+          <div className="card">
+            <h3>Quality Delivery</h3>
+            <p>High-performance execution with scalable systems.</p>
           </div>
+
+        </div>
+      </section>
+
+      {/* ================= STATS ================= */}
+      <section className="stats-section">
+        <div className="container stats-container">
+
+          <div className="stat-box">
+            <h1>100+</h1>
+            <p>IT Professionals</p>
+          </div>
+
+          <div className="stat-box">
+            <h1>50+</h1>
+            <p>Projects Delivered</p>
+          </div>
+
+          <div className="stat-box">
+            <h1>20+</h1>
+            <p>Technology Domains</p>
+          </div>
+
+          <div className="stat-box">
+            <h1>95%</h1>
+            <p>Client Satisfaction</p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ================= CTA (UPGRADED PREMIUM VERSION) ================= */}
+      <section className="cta-section">
+
+        <div className="cta-glow"></div>
+        <div className="cta-glow-2"></div>
+
+        <div className="container cta-container">
+
+          <h2>Ready to Transform Your Business?</h2>
+
+          <p>
+            Partner with NextGen Solutions Corporation to accelerate your
+            digital transformation journey with AI, Cloud & Modern IT Solutions.
+          </p>
+
+          <button className="btn primary cta-btn">
+            Get Started
+          </button>
 
         </div>
 
       </section>
-
-      {/* Statistics */}
-
-      <section className="stats">
-
-        <div className="stat-box">
-          <h1>100+</h1>
-          <p>IT Professionals</p>
-        </div>
-
-        <div className="stat-box">
-          <h1>50+</h1>
-          <p>Projects Delivered</p>
-        </div>
-
-        <div className="stat-box">
-          <h1>20+</h1>
-          <p>Technology Domains</p>
-        </div>
-
-        <div className="stat-box">
-          <h1>95%</h1>
-          <p>Client Satisfaction</p>
-        </div>
-
-      </section>
-
-      {/* CTA */}
-
-      <section className="cta">
-
-        <h2>Ready to Transform Your Business?</h2>
-
-        <p>
-          Partner with NextGen Solutions Corporation to accelerate your
-          digital transformation journey with innovative technology
-          solutions and trusted IT staffing services.
-        </p>
-
-        <button className="primary-btn">
-          Get Started
-        </button>
-
-      </section>
-
     </>
   );
 }
